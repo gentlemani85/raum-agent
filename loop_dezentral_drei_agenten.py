@@ -47,8 +47,9 @@ for i in range(runden):
     # Agent A
     task_a = Task(
         description=(
-            f"Letzte Aussage von Agent C:\n{antwort_c}\n"
-            f"Antworte nur, wenn du wirklich etwas spürst."
+            f"Agent B sagte zuletzt:\n{antwort_b}\n"
+            f"Agent C bemerkte dazu:\n{antwort_c}\n"
+            f"Wenn sich in dir etwas bewegt, antworte. Wenn nicht: bleibe still."
         ),
         expected_output="Ein einzelner Satz – oder nichts.",
         agent=agent_a,
